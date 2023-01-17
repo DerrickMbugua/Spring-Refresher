@@ -9,24 +9,24 @@ import java.util.List;
 @Configuration
 public class StudentConfig {
 
-    @Bean
-    CommandLineRunner commandLineRunner(StudentRepository repository){
-        return args -> {
-            Student d = new Student(
-                    "Derrick",
-                    "derrickmbugua50@gmail.com",
-                    24
-            );
-
-            Student m = new Student(
-                    "Mwema",
-                    "mwema@gmail.com",
-                    24
-            );
-
-            repository.saveAll(
-                    List.of(d,m)
-            );
-        };
-    }
+//    @Bean
+//    CommandLineRunner commandLineRunner(StudentRepository repository){
+//        return args -> {
+//            Student d = new Student(
+//                    "Derrick",
+//                    "derrickmbugua50@gmail.com",
+//                    24
+//            );
+//
+//            Student m = new Student(
+//                    "Mwema",
+//                    "mwema@gmail.com",
+//                    24
+//            );
+//
+//            repository.saveAll(
+//                    List.of(d,m)
+//            );
+//        };
+//    }
 }
