@@ -9,4 +9,6 @@ import java.util.Optional;
 public interface StudentRepository extends JpaRepository<Student, Long> {
 
     Optional<Student> findStudentsByEmail(String email);
+
+    void deleteById(Long studentId);
 }
